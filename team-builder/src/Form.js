@@ -14,8 +14,8 @@ const onSubmit = event => {
 }
 
 return (
-    <form onSubmit={onSubmit}>
-        <label>Name
+    <form className='container' onSubmit={onSubmit}>
+        <label className='container-items'>Name
             <input 
                 name='name'
                 type='text'
@@ -26,7 +26,7 @@ return (
             />
         </label>
 
-        <label>Email
+        <label className='container-items'>Email
             <input 
                 name='email'
                 type='email'
@@ -36,28 +36,22 @@ return (
             />
         </label>
 
-        <label>Role
+        <label className='container-items'>Role
             <select name='role' value={values.role} onChange={onChange}>
                 <option value="">---Select a Role---</option>
-                <option value="Front-End">Front End Engineer</option>
-                <option value="Back-End">Back End Engineer</option>
+                <option value="Front End Engineer">Front End Engineer</option>
+                <option value="Back End Engineer">Back End Engineer</option>
                 <option value="Designer">Designer</option>
                 <option value="Big Boss">Big Boss</option>
                 <option value="Baby Boss">Baby Boss</option>
             </select>
         </label>
         
-       <div classname='submit'>
+       <div className='submit'>
             <button>Submit</button>
        </div>
     </form>
 
 
 )
-
-
-
-
-
-
 }
